@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Tic Tac Toe</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+
+      <!-- Adapted from bootstrap docs -->
+      <div id="main-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title"></h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div id="modal-body" class="modal-body">
+              <!-- Dynamic data here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary modal-close" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <header class="jumbotron">
+        <div class="container">
+          <div class="row justify-content-center">
+            <h1 class="col-12 col-md-8 text-center">Tic Tac Toe</h1>
+            <div id="auth-buttons" class="row col-6 col-md-4 justify-content-center">
+              <button id="sign-in-button" type="button" class="btn btn-primary col-md-6" data-toggle="modal" data-target="#main-modal">
+                Sign in
+              </button>
+              <button id="sign-up-button" type="button" class="btn btn-light col-md-6" data-toggle="modal" data-target="#main-modal">
+                Sign Up
+              </button>
+            </div>
+            <div id="other-auth-buttons" class="row col-6 col-md-4 justify-content-center">
+              <button id="change-password-button" type="button" class="btn btn-primary col-12 col-md-6" data-toggle="modal" data-target="#main-modal">
+                Change Password
+              </button>
+              <button id="sign-out-button" type="button" class="btn btn-light col-12 col-md-6" data-toggle="modal" data-target="#main-modal">
+                Sign Out
+              </button>
+              <button id="get-games" type="button" class="btn btn-info col-12" data-toggle="modal" data-target="#main-modal">
+                Get Previous Games
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="display" class="container">
+        <div class="row">
+          <h3 class="col-12 text-center">Sign up or sign in to play.</h3>
+        </div>
+        <br>
+      </div>
+      <main id="game-board" class="main container">
+        <div class="row justify-content-center">
+          <div class="row col-9 justify-content-center">
+            <div id="box0" class="col-4 border border-light game-space" data-cell-index='0'></div>
+            <div id="box1" class="col-4 border border-light game-space" data-cell-index='1'></div>
+            <div id="box2" class="col-4 border border-light game-space" data-cell-index='2'></div>
+            <div id="box3" class="col-4 border border-light game-space" data-cell-index='3'></div>
+            <div id="box4" class="col-4 border border-light game-space" data-cell-index='4'></div>
+            <div id="box5" class="col-4 border border-light game-space" data-cell-index='5'></div>
+            <div id="box6" class="col-4 border border-light game-space" data-cell-index='6'></div>
+            <div id="box7" class="col-4 border border-light game-space" data-cell-index='7'></div>
+            <div id="box8" class="col-4 border border-light game-space" data-cell-index='8'></div>
+          </div>
+        </div>
+      </main>
+      <br>
+      <div id="game-buttons" class="row justify-content-center">
+        <button id="new-game" class="btn btn-success mx-auto">Start Player Game</button>
+        <button id="computer-game" class="btn btn-danger mx-auto">Start Computer Game</button>
+      </div>
+      <br>
+    </body>
+</html>
