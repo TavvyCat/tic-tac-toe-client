@@ -7,16 +7,16 @@ const signUpModal = () => {
     utility.populateModalBody(`
         <form id="sign-up-form">
             <fieldset>
-                <label>Email
-                    <input class="form-control" name="credentials[email]" type="email" placeholder="test@test.com">
+                <label class="d-block">Email
+                    <input class="form-control" name="credentials[email]" type="email" placeholder="email@example.com">
                 </label>
-                <label>Password
+                <label class="d-block">Password
                     <input class="form-control" name="credentials[password]" type="password" placeholder="password">
                 </label>
-                <label>Confirm Password
+                <label class="d-block">Confirm Password
                     <input class="form-control" name="credentials[password_confirmation]" type="password" placeholder="password">
                 </label>
-                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-primary mx-auto d-block" type="submit" value="Submit">
             </fieldset>
         </form>
     `)
@@ -28,13 +28,13 @@ const signInModal = () => {
     utility.populateModalBody(`
     <form id="sign-in-form">
         <fieldset>
-            <label>Email
-                <input class="form-control" name="credentials[email]" type="email" placeholder="test@test.com">
+            <label class="d-block">Email
+                <input class="form-control" name="credentials[email]" type="email" placeholder="email@example.com">
             </label>
-            <label>Password
+            <label class="d-block">Password
                 <input class="form-control" name="credentials[password]" type="password" placeholder="password">
             </label>
-            <input class="btn btn-primary" type="submit" value="Submit">
+            <input class="btn btn-primary mx-auto d-block" type="submit" value="Submit">
         </fieldset>
     </form>
     `)
@@ -46,13 +46,13 @@ const changePasswordModal = () => {
     utility.populateModalBody(`
         <form id="change-password-form">
             <fieldset>
-                <label>Old Password
+                <label class="d-block">Old Password
                     <input class="form-control" name="passwords[old]" type="password" placeholder="old password">
                 </label>
-                <label>New Password
+                <label class="d-block">New Password
                     <input class="form-control" name="passwords[new]" type="password" placeholder="new password">
                 </label>
-                    <input class="btn btn-primary" type="submit" value="Submit">
+                    <input class="btn btn-primary mx-auto d-block" type="submit" value="Submit">
             </fieldset>
         </form>
     `)
@@ -65,7 +65,7 @@ const signOutModal = () => {
         <form id="sign-out-form">
             <fieldset>
                 <p>Are you sure you want to sign out?</p>
-                <input class="btn btn-primary" type="submit" value="Submit">
+                <input class="btn btn-primary mx-auto d-block" type="submit" value="Submit">
             </fieldset>
         </form>
     `)

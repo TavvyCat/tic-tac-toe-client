@@ -79,8 +79,8 @@ const computerPlay = () => {
     utility.switchPlayer()
     updateGame.cell.index = move.index
     updateGame.cell.value = store.player
+    $(`#box${move.index}`).off('click')
     utility.checkGame()
-    console.log(store.updateData);
     api.ajaxUpdateGame()
         .then(ui.onComputerUpdateSuccess)
 }

@@ -24,10 +24,10 @@ const onNewGameSuccess = res => {
 const onUpdateGameSuccess = res => {
     const cells = res.game.cells
     const gameBoard = $('.game-space')
-    for(let i = 0; i < cells.length; i++) {
+    for (let i = 0; i < cells.length; i++) {
         if (cells[i]) $(gameBoard[i]).addClass('game-space-display').text(cells[i])
     }
-    if(res.game.over) {
+    if (res.game.over) {
         $('.game-space').off('click') 
         store.isTie = false
     } else {
@@ -43,9 +43,11 @@ const onPlayerUpdateSuccess = res => {
         utility.changeDisplay("Computer's turn")
     }
     onUpdateGameSuccess(res)
-    setTimeout(() => {
-        computer.computerPlay()
-    }, 1000)
+    if (res.game.over === false) {
+        setTimeout(() => {
+            computer.computerPlay()
+        }, 1000)
+    }
 }
 const onComputerUpdateSuccess = res => {
     if (store.isTie) {

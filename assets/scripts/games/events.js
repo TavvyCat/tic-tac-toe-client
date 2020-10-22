@@ -18,6 +18,9 @@ const onNewComputerGame = () => {
 }
 
 const onSpaceClicked = e => {
+    if (store.computerMode === true && store.player === 'x') {
+        return
+    }
     $(e.target).off('click')
     const updateGameData = store.updateData.game
     utility.switchPlayer()
