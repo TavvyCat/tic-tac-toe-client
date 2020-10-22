@@ -10,7 +10,7 @@ const onNewGameSuccess = res => {
         utility.changeDisplay(`New game started. Click on square to start. X goes first.`)
     }
 
-    $('#game-board').show()
+    $('#game-board').show(500, 'swing')
     $('.game-space').text("")
     $('.game-space').on('click', gameEvents.onSpaceClicked)
 
