@@ -1,10 +1,11 @@
 @import '~bootstrap/scss/bootstrap';
 
 .game-space {
-    padding: 0;
+    padding: 0 0 10vw 0;
     color: white;
     background-color: #373737;
-    font-size: 22vw;
+    font-size: 32vw;
+    height: 23.5vw;
     overflow: hidden;
 
     &:hover {
@@ -36,7 +37,6 @@
 
 .game-space-display {
     display: flex;
-    padding: 0 0 12% 0;
     margin: 0;
     line-height: 0;
     justify-content: center;
@@ -45,4 +45,35 @@
 
 #new-game, #computer-game, #display h3 {
     font-size: 2.5vw;
+}
+
+@media (min-width: 576px) {
+    .game-space {
+        height: 123px;
+        font-size: 169px;
+        padding-bottom: 54px;
+    }
+}
+
+@media (min-width: 768px) {
+    .game-space {
+        height: 168px;
+        font-size: 235px;
+        padding-bottom: 76px;
+    }
+}
+
+@media (min-width: 992px) {
+    .game-space {
+        height: 228px;
+        font-size: 332px;
+        padding-bottom: 112px;
+    }
+}
+@media (min-width: 1200px) {
+    .game-space {
+        height: 273px;
+        font-size: 406px;
+        padding-bottom: 133px;
+    }
 }

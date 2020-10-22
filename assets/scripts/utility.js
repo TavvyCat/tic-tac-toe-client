@@ -26,11 +26,6 @@ const checkGame = () => {
     } else return
 }
 
-const updateHeight = () => {
-    $('.game-space').show(() => {
-        $('.game-space').css('height', $('.game-space').innerWidth())
-    });
-}
 const closeModalAndClearForms = () => {
     $('form').trigger('reset')
     $('.modal-close').trigger('click')
@@ -46,7 +41,6 @@ const switchPlayer = () => store.player = store.player === 'x' ? 'o' : 'x'
 export {
     changeDisplay,
     checkGame,
-    updateHeight,
     closeModalAndClearForms,
     populateModalBody,
     switchPlayer

@@ -7,7 +7,6 @@ $(() => {
   $('#other-auth-buttons').hide()
   $('#game-board').hide();
   $('#game-buttons').hide()
-  $('.game-space').hide()
 
   // Buttons for modals
   $('#sign-up-button').on('click', modals.signUpModal)
@@ -19,9 +18,4 @@ $(() => {
   // Game event handlers
   $('#new-game').on('click', gameEvents.onNewPlayerGame)
   $('#computer-game').on('click', gameEvents.onNewComputerGame)
-
-  // Game board css
-  
-  // $('.game-space').css('height', width)
-  $(window).on('resize', gameEvents.onResize)
 })

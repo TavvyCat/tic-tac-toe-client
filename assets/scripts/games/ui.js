@@ -11,8 +11,6 @@ const onNewGameSuccess = res => {
     }
 
     $('#game-board').show()
-    
-    utility.updateHeight()
     $('.game-space').text("")
     $('.game-space').on('click', gameEvents.onSpaceClicked)
 
