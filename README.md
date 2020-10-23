@@ -6,7 +6,9 @@ I had a pretty good idea of how to build everything. I was already familiar with
 
 ### Wireframe
 
-![Image of Wireframe](Final-wireframe.png)
+![Before sign-in Wireframe](images/Final-wireframe2.png)
+
+![After sign-in Wireframe](images/Final-wireframe.png)
 
 ### User Stories
 * As a user, I want to create my own account.
