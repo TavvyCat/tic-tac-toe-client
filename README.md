@@ -1,5 +1,5 @@
 # Tic Tac Toe
-This is the front end for a simple Tic Tac Toe game where you can sign up for an account and onve signed in you can play an infinite amount of games. The API will keep track of all the games you've played. I've also added a computer player that will try to block you when you get 2 in a row.
+This is the front end for a simple Tic Tac Toe game where you can sign up for an account and once signed in you can play an infinite amount of games. The API will keep track of all the games you've played. I've also added a computer player that will try to block you when you get 2 in a row.
 
 ### Planning
 I had a pretty good idea of how to build everything. I was already familiar with the authentication process, so I just went for that. The game logic was something I hadn't encountered before, but I knew I could make it work. By using JQuery I was able to easily add and remove click listeners when needed. So that each space could only be clicked once. I also knew from the beginning that I wanted a somewhat smart computer player. The logic for it was very similar to checking for a winner, so I used the same kind of syntax, with different if checks and was able to figure it out.
